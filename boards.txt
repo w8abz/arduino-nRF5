@@ -289,6 +289,43 @@ STCT_nRF52_minidev.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51
 STCT_nRF52_minidev.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
 
 
+nRF52832_MDK.name=Makerdiary nRF52832-MDK
+
+nRF52832_MDK.upload.tool=sandeepmistry:openocd
+nRF52832_MDK.upload.target=nrf52
+nRF52832_MDK.upload.maximum_size=524288
+
+nRF52832_MDK.bootloader.tool=sandeepmistry:openocd
+
+nRF52832_MDK.build.mcu=cortex-m4
+nRF52832_MDK.build.f_cpu=16000000
+nRF52832_MDK.build.board=NRF52832_MDK
+nRF52832_MDK.build.core=nRF5
+nRF52832_MDK.build.variant=nRF52832-MDK
+nRF52832_MDK.build.variant_system_lib=
+nRF52832_MDK.build.extra_flags=-DNRF52
+nRF52832_MDK.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+nRF52832_MDK.build.ldscript=nrf52_xxaa.ld
+
+nRF52832_MDK.menu.softdevice.none=None
+nRF52832_MDK.menu.softdevice.none.softdevice=none
+nRF52832_MDK.menu.softdevice.none.softdeviceversion=
+
+nRF52832_MDK.menu.softdevice.s132=S132
+nRF52832_MDK.menu.softdevice.s132.softdevice=s132
+nRF52832_MDK.menu.softdevice.s132.softdeviceversion=2.0.1
+nRF52832_MDK.menu.softdevice.s132.upload.maximum_size=409600
+nRF52832_MDK.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
+nRF52832_MDK.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
+nRF52832_MDK.menu.lfclk.lfxo=Crystal Oscillator
+nRF52832_MDK.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+nRF52832_MDK.menu.lfclk.lfrc=RC Oscillator
+nRF52832_MDK.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+nRF52832_MDK.menu.lfclk.lfsynt=Synthesized
+nRF52832_MDK.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT
+
+
 # nRF51 variants
 ###################
 
